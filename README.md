@@ -10,3 +10,7 @@ Place the file in a directory included in your path, give write permissions, the
 <pre>
 mekmek:world_domination root$ lilwatcher "rsync ~/development/world_domination skynet-1:stage_one/"
 </pre>
+
+Whenever a file inside 'world_domination' (pwd) changes, the rsync command will fire off
+
+Output is console logged
