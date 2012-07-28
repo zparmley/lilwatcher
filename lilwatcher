@@ -1,0 +1,18 @@
+#!/usr/local/bin/node
+var watch = require('watch')
+var path = require('path')
+var exec = require('child_process').exec
+
+var cmd = process.argv[2]
+
+watch.watchTree(path.resolve('.'), function (file, current, previous) {
+	console.log(file + ' has changed')
+	exec(cmd, function(error, out, err) {
+		console.log(out)
+		if (error !== null) {
+			console.log('error: ' + error)
+		}
+	})
+})
+
+console.log('running')
