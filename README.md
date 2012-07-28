@@ -7,4 +7,6 @@ Resolves PWD wherever it is run from, and fires off a command when a file in the
 ## Installation
 
 Place the file in a directory included in your path, give write permissions, then run from any directory ala:
-	lilwatcher "rsync ~/development/world_domination skynet-1:stage_one/"
+<pre>
+mekmek:world_domination root$ lilwatcher "rsync ~/development/world_domination skynet-1:stage_one/"
+</pre>
